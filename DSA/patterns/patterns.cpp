@@ -10,27 +10,43 @@ void squarePattern(int a) {
   }
 }
 
-void rightAnglePattern(int a, string str){
-  if(str=="*"){
-  for(int i=0; i<a; i++){
-    for(int j=0;j<=i;j++){
-      cout<<"* ";
+void rightAnglePattern(int a, string str) {
+  if (str == "*") {
+    for (int i = 0; i < a; i++) {
+      for (int j = 0; j <= i; j++) {
+        cout << "* ";
+      }
+      cout << endl;
     }
-    cout<<endl;
   }
-    
+  if (str == "number") {
+    for (int i = 0; i < a; i++) {
+      for (int j = 1; j <= i + 1; j++) {
+        cout << j << " ";
+      }
+      cout << endl;
+    }
   }
-  if(str=="number"){
+
+
+}
+
+void reverseRightAgnleTriangle(int a, string str) {
+  if (str == "*") {
+    for (int i = 0; i < a; i++) {
+      for (int j = a; j > i; j--) {
+        cout << "* ";
+      }
+      cout << endl;
+    }
+  }
+  if(str == "number") {
     for(int i=0;i<a;i++){
-      for(int j=1;j<=i+1;j++){
-        cout<<j<<" ";
+      int idx = 1;
+      for(int j=a;j>i;j--){
+        cout<<idx++<<" ";
       }
       cout<<endl;
     }
   }
-
-void reverseRightAng
-  
 }
-
-
