@@ -8,6 +8,7 @@ int main() {
   rightAnglePattern(5, "number");
   reverseRightAgnleTriangle(5, "*");
   reverseRightAgnleTriangle(5, "number");
+  straigthPyramid(5, "*");
 
   return 0;
 }

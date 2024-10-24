@@ -6,4 +6,5 @@
 void squarePattern(int a);
 void rightAnglePattern(int a, std::string str);
 void reverseRightAgnleTriangle(int a, std::string str);
+void straigthPyramid(int a, std::string str);
 #endif

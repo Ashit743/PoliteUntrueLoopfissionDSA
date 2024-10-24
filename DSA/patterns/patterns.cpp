@@ -27,8 +27,6 @@ void rightAnglePattern(int a, string str) {
       cout << endl;
     }
   }
-
-
 }
 
 void reverseRightAgnleTriangle(int a, string str) {
@@ -40,13 +38,29 @@ void reverseRightAgnleTriangle(int a, string str) {
       cout << endl;
     }
   }
-  if(str == "number") {
-    for(int i=0;i<a;i++){
+  if (str == "number") {
+    for (int i = 0; i < a; i++) {
       int idx = 1;
-      for(int j=a;j>i;j--){
-        cout<<idx++<<" ";
+      for (int j = a; j > i; j--) {
+        cout << idx++ << " ";
       }
-      cout<<endl;
+      cout << endl;
+    }
+  }
+}
+
+void straigthPyramid(int a, string str) {
+  if (str == "*") {
+    int k = 1;
+    for (int i = 0; i < a; i++) {
+      for (int j = a; j > i; j--) {
+        cout << " ";
+      }
+      for (int l = 0; l < k; l++) {
+        cout << "*";
+      }
+      k += 2;
+      cout << endl;
     }
   }
 }
