@@ -64,3 +64,26 @@ void straigthPyramid(int a, string str) {
     }
   }
 }
+
+void reversePyramid(int a, string str){
+  if(str == "*"){
+    int k = (2*a)-1;
+    for(int i =0;i<a;i++){
+      for(int j = 0;j<=i;j++){
+        cout<<" ";
+      }
+      for(int l = k; l>0; l--){
+        cout<<"*";
+      }
+      k-=2;
+      cout<<endl;
+    } 
+  }
+}
+
+void rhombus(int a, string str){
+  if(str=="*"){
+    straigthPyramid(5,"*");
+    reversePyramid(5, "*");
+  }
+}
