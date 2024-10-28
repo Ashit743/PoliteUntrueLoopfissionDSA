@@ -10,6 +10,10 @@ int main() {
   reverseRightAgnleTriangle(5, "number");
   straigthPyramid(5, "*");
   reversePyramid(5, "*");
-  rhombus(5,"*");
+  rhombus(5, "*");
+  arrowHead(5, "*");
+  toggledRightAngleTriangle(5);
+  NumberCrownPattern(5);
+  IncreasingNumberRightAngleTriangle(5);
   return 0;
 }
