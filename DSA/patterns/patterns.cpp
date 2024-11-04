@@ -134,3 +134,50 @@ void IncreasingNumberRightAngleTriangle(int a) {
     cout << endl;
   }
 }
+
+void alphabetRightAngledTriangle(int a ){
+  for(int i= 0;i<a;i++){
+    int start = 65;
+    for(int j = 0;j<=i;j++){
+      cout<<char(start++)<<" ";
+    }
+    cout<<endl;
+  }
+}
+
+void reverseAlphabetsRightAngledTriangle(int a){
+  for(int  i = 0;i<a;i++){
+    int start = 65;
+    for(int j = a-i;j>0;j--){
+      cout<<char(start++)<<" ";
+    }
+    cout<<endl;
+  }
+}
+
+void alphaRampPattern(int a){
+  int start = 65;
+  for(int i=0;i<a;i++){
+    for(int j=0;j<=i;j++){
+      cout<<char(start)<<" ";
+    }
+    start++;
+    cout<<endl;
+  }
+}
+
+//incomplete 
+void alphaHillPattern(int a){
+  for(int i =0;i<a;i++){
+    for(int j=a;j>0;j--){
+      cout<<" ";
+    }
+    int start = 65;
+    
+    for(int j=0;j<=i;j++){
+      cout<<char(start++);
+    }
+
+    cout<<endl;
+  }
+}

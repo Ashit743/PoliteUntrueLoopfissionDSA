@@ -15,5 +15,8 @@ int main() {
   toggledRightAngleTriangle(5);
   NumberCrownPattern(5);
   IncreasingNumberRightAngleTriangle(5);
+  alphabetRightAngledTriangle(5);
+  reverseAlphabetsRightAngledTriangle(5);
+  alphaRampPattern(5);
   return 0;
 }
