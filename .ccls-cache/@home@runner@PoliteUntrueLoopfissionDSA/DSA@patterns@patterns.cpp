@@ -135,49 +135,97 @@ void IncreasingNumberRightAngleTriangle(int a) {
   }
 }
 
-void alphabetRightAngledTriangle(int a ){
-  for(int i= 0;i<a;i++){
+void alphabetRightAngledTriangle(int a) {
+  for (int i = 0; i < a; i++) {
     int start = 65;
-    for(int j = 0;j<=i;j++){
-      cout<<char(start++)<<" ";
+    for (int j = 0; j <= i; j++) {
+      cout << char(start++) << " ";
     }
-    cout<<endl;
+    cout << endl;
   }
 }
 
-void reverseAlphabetsRightAngledTriangle(int a){
-  for(int  i = 0;i<a;i++){
+void reverseAlphabetsRightAngledTriangle(int a) {
+  for (int i = 0; i < a; i++) {
     int start = 65;
-    for(int j = a-i;j>0;j--){
-      cout<<char(start++)<<" ";
+    for (int j = a - i; j > 0; j--) {
+      cout << char(start++) << " ";
     }
-    cout<<endl;
+    cout << endl;
   }
 }
 
-void alphaRampPattern(int a){
+void alphaRampPattern(int a) {
   int start = 65;
-  for(int i=0;i<a;i++){
-    for(int j=0;j<=i;j++){
-      cout<<char(start)<<" ";
+  for (int i = 0; i < a; i++) {
+    for (int j = 0; j <= i; j++) {
+      cout << char(start) << " ";
     }
     start++;
-    cout<<endl;
+    cout << endl;
   }
 }
 
-//incomplete 
-void alphaHillPattern(int a){
-  for(int i =0;i<a;i++){
-    for(int j=a;j>0;j--){
-      cout<<" ";
+void alphaHillPattern(int a) {
+  int l = 0;
+  for (int i = 0; i < a; i++) {
+
+    for (int j = a - i; j > 0; j--) {
+      cout << " ";
     }
     int start = 65;
-    
-    for(int j=0;j<=i;j++){
-      cout<<char(start++);
-    }
 
-    cout<<endl;
+    for (int j = 0; j <= i; j++) {
+      cout << char(start++);
+    }
+    start = 65;
+    start = start + l - 1;
+    for (int j = 0; j < i; j++) {
+      cout << char(start--);
+    }
+    l++;
+    cout << endl;
+  }
+}
+
+void alphaTrianglePattern(int a) {
+  int initialStartFrom = 65 + a - 1;
+  for (int i = 0; i < a; i++) {
+    int rowData = initialStartFrom;
+    for (int j = 0; j <= i; j++) {
+      cout << char(rowData++);
+    }
+    initialStartFrom--;
+    cout << endl;
+  }
+}
+
+void SymmetricVoidPattern(int a) {
+  // first half
+  for (int i = 0; i < a; i++) {
+    for (int j = a - i; j > 0; j--) {
+      cout << "*";
+    }
+    for (int j = 0; j < i; j++) {
+      cout << "  ";
+    }
+    for (int j = a - i; j > 0; j--) {
+      cout << "*";
+    }
+    if(i!=a-1)
+    cout << endl;
+  }
+  // second half
+  for (int i = 0; i <= a; i++) {
+    for (int j = 0; j < i; j++) {
+      cout << "*";
+    }
+    for (int j = a - i; j > 0; j--) {
+      cout << "  ";
+    }
+    for (int j = 0; j < i; j++) {
+      cout << "*";
+    }
+    cout << endl;
   }
 }

@@ -16,4 +16,7 @@ void IncreasingNumberRightAngleTriangle(int a);
 void alphabetRightAngledTriangle(int a);
 void reverseAlphabetsRightAngledTriangle(int a);
 void alphaRampPattern(int a);
+void alphaHillPattern(int a);
+void alphaTrianglePattern(int a);
+void SymmetricVoidPattern(int a);
 #endif

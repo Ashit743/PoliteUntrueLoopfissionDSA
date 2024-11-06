@@ -18,5 +18,8 @@ int main() {
   alphabetRightAngledTriangle(5);
   reverseAlphabetsRightAngledTriangle(5);
   alphaRampPattern(5);
+  alphaHillPattern(5);
+  alphaTrianglePattern(5);
+  SymmetricVoidPattern(16);
   return 0;
 }
