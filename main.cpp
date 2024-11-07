@@ -21,5 +21,6 @@ int main() {
   alphaHillPattern(5);
   alphaTrianglePattern(5);
   SymmetricVoidPattern(16);
+  hollowRectangle(20);
   return 0;
 }
