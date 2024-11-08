@@ -20,4 +20,5 @@ void alphaHillPattern(int a);
 void alphaTrianglePattern(int a);
 void SymmetricVoidPattern(int a);
 void hollowRectangle(int a);
+void theNumberPattern(int a);
 #endif

@@ -230,21 +230,51 @@ void SymmetricVoidPattern(int a) {
   }
 }
 
+//incomplete 
 void hollowRectangle(int a) {
   for (int i = 0; i < a; i++) {
     for (int j = 0; j < a; j++) {
-      if(i==0 || i==a-1){
+      if (i == 0 || i == a - 1) {
         cout << "*";
-      }
-      else{
-        if(j==0 || j==a-1){
-          cout<<"*";
-        }
-        else{
-          cout<<" ";
+      } else {
+        if (j == 0 || j == a - 1) {
+          cout << "*";
+        } else {
+          cout << " ";
         }
       }
     }
-    cout<<endl;
+    cout << endl;
   }
+}
+
+void theNumberPattern(int a) {
+  for (int i = 0; i <= a; i++) {
+  int val = a;
+    int k = 0;
+    for (int j = 0; j < a; j++) {
+      if (k < i) {
+        val-=k;
+        k++;
+      }
+      cout << val;
+    }
+    
+    // for(int j= a;j<a*2;j++){
+      
+    // }
+    cout << endl;
+  }
+  // for(int i =1;i<=a;i++){
+  //   int val = a;
+  //   int k = a-i;
+  //   for(int j = 0; j <a *2;j++){
+  //     if(k>0){
+  //       val--;
+  //       k--;
+  //     }
+  //     cout<<val;
+  //   }
+  //   cout<<endl;
+  // }
 }
