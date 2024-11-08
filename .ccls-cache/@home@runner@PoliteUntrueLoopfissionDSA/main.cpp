@@ -1,5 +1,5 @@
 #include "DSA/patterns/patterns.h"
-#include "DSA/patterns/stlImp.h"
+#include "DSA/stl/stlImp.h"
 #include <iostream>
 using namespace std;
 int main() {
